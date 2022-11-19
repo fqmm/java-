@@ -1,0 +1,17 @@
+public class 泛型<T>{
+	private T book;
+	public 泛型(T book) {
+		this.book=book;
+	}
+	public T getbook() {
+		return book;
+	}
+	public static void main(String[] args)
+	{
+		泛型<String>bookname=new 泛型<String>("《CCF程序设计》");
+		泛型<Double>bookprice=new 泛型<Double>(45.00);
+		System.out.println("书名："+bookname.getbook());
+		System.out.println("价格："+bookprice.getbook());
+	
+	}
+}
