@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+public class Listt{
+	public static void main(String[] args) {
+		List<String>list = new ArrayList<>();
+		list.add("一");
+		list.add("二");
+		list.add("三");
+		int i =2;
+		System.out.println("获取元素："+list.get(i));
+		list.remove(i);
+		System.out.println("移除元素后元素：");
+		for(int k = 0;k<list.size();k++) {
+			System.out.println("元素"+k+": "+list.get(k));
+		}
+	}
+}
